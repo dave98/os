@@ -1,0 +1,11 @@
+para gcc usa:
+gcc -m32 -ffreestanding -c <name>.c -o <name>.o
+
+para el linker aplica: 
+ld -Ttext 0x10000 -m i386pe -o <name>.pe <name>.o
+
+para la obtencion del binario
+objcopy -O binary <name>.pe <name>.bin
+
+para ver el assembler del c ademas de su arquitectura:
+objdump -d <name>.o //o cualquier otra extension.

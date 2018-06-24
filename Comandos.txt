@@ -1,0 +1,7 @@
+Compilar para boot de qemu:
+nasm file.asm -f bin -o file.bin
+
+->Ejecutar haciendo click sobre file.bin (Debes tener qemu instalado).
+
+Ver binario:
+od -t x1 -A n file.bin
